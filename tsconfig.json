@@ -1,4 +1,10 @@
 {
+  "ts-node": {
+    // Do not forget to `npm i -D tsconfig-paths`
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  },
   "compilerOptions": {
     "target": "ES2018" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */,
     "module": "commonjs" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
@@ -8,7 +14,7 @@
       "dom"
     ] /* Specify library files to be included in the compilation. */,
     "sourceMap": true /* Generates corresponding '.map' file. */,
-    "outDir": "./dist" /* Redirect output structure to the directory. */,
+    "outDir": "build" /* Redirect output structure to the directory. */,
     "strict": true /* Enable all strict type-checking options. */,
     "strictPropertyInitialization": false /* Enable strict checking of property initialization in classes. */,
     "moduleResolution": "node" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */,
@@ -17,26 +23,56 @@
       "@services/*": [
         "api/v1/services/*"
       ],
+      "@services": [
+        "api/v1/services/index"
+      ],
       "@controller/*": [
         "api/v1/controller/*"
+      ],
+      "@controller": [
+        "api/v1/controller/index"
       ],
       "@routes/*": [
         "api/v1/routes/*"
       ],
+      "@routes": [
+        "api/v1/routes/index"
+      ],
       "@middleware/*": [
         "api/v1/middleware/*"
+      ],
+      "@middleware": [
+        "api/v1/middleware/index"
       ],
       "@config/*": [
         "api/v1/config/*"
       ],
+      "@config": [
+        "api/v1/config/index"
+      ],
       "@interfaces/*": [
         "api/v1/interfaces/*"
+      ],
+      "@interfaces": [
+        "api/v1/interfaces/index"
+      ],
+      "@validator/*": [
+        "api/v1/validator/*"
+      ],
+      "@validator": [
+        "api/v1/validator/index"
+      ],
+      "@utils/*": [
+        "api/v1/utils/*"
+      ],
+      "@utils": [
+        "api/v1/utils/index"
       ]
     },
     "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+    "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */,
     "emitDecoratorMetadata": true /* Enables experimental support for emitting type metadata for decorators. */
-    
   },
   "exclude": [
     "node_modules",
