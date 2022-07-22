@@ -13,12 +13,12 @@ const getAllUsersController = async (
     data: [],
   };
   const { error, users } = await getAllUsersService();
-  if (!Boolean(error)) {
-    response["message"] = "Successfully fetch all users.";
-    response.data = users;
-    res.send(response);
+  if (Boolean(error)) {
+    return next(error);
   }
-  next(error);
+  response["message"] = "Successfully fetch all users.";
+  response.data = users;
+  return res.send(response);
 };
 const getUserByIdController = (
   req: Request,
