@@ -48,11 +48,7 @@ The web's most popular back-end framework template for building web api with
 
 ## Tech Stack
 
-<img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/typescript.svg" title="TypeScript" width=50 height=50 style='margin-right: 15px'/> 
-<img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/nodejs.svg" title="Node Js" width=50 height=50 style='margin-right: 15px'/> 
-<img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/express.svg" title="Express Js" width=50 height=50 style='margin-right: 15px'/> 
-<img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/prisma.svg" title="Prisma" width=50 height=50 style='margin-right: 15px'/> 
-<img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/postgresql.svg" title="PostgreSql" width=50 height=50 style='margin-right: 15px'/>
+<a href="https://www.typescriptlang.org/" title="Typescript"><img src="https://github.com/get-icon/geticon/raw/master/icons/typescript-icon.svg" alt="Typescript" width="21px" height="21px"></a>&nbsp;&nbsp;&nbsp;<a href="https://nodejs.org/" title="Node.js"><img src="https://github.com/get-icon/geticon/raw/master/icons/nodejs-icon.svg" alt="Node.js" width="21px" height="21px"></a>&nbsp;&nbsp;&nbsp;<a href="https://expressjs.com/" title="Express"><img src="https://github.com/get-icon/geticon/raw/master/icons/express.svg" alt="Express" width="51px" height="51px"></a>&nbsp;&nbsp;&nbsp;<a href="https://nodejs.org/" title="Node.js"><img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/prisma.svg" alt="Node.js" width="21px" height="21px"></a>&nbsp;&nbsp;&nbsp;<a href="https://nodejs.org/" title="Node.js"><img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/postgresql.svg" alt="Node.js" width="21px" height="21px"></a>
 
 ## Requirements
 
