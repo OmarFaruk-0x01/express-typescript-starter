@@ -50,10 +50,6 @@ The web's most popular back-end framework template for building web api with
 
 <a href="https://www.typescriptlang.org/" title="Typescript"><img src="https://github.com/get-icon/geticon/raw/master/icons/typescript-icon.svg" alt="Typescript" width="30px" height="30px"></a>&nbsp;&nbsp;&nbsp;<a href="https://nodejs.org/" title="Node.js"><img src="https://github.com/get-icon/geticon/raw/master/icons/nodejs-icon.svg" alt="Node.js" width="30px" height="30px"></a>&nbsp;&nbsp;&nbsp;<a href="https://expressjs.com/" title="Express"><img src="https://github.com/get-icon/geticon/raw/master/icons/express.svg" alt="Express" width="30px" height="30px"></a>&nbsp;&nbsp;&nbsp;<a href="https://nodejs.org/" title="Node.js"><img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/prisma.svg" alt="Node.js" width="30px" height="30px"></a>&nbsp;&nbsp;&nbsp;<a href="https://nodejs.org/" title="Node.js"><img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/postgresql.svg" alt="Node.js" width="30px" height="30px"></a>
 
-## Requirements
-
-- [Node.js](https://nodejs.org/) v16 or newer, [Yarn](https://yarnpkg.com/) package manager
-- [VS Code](https://code.visualstudio.com/) editor with [recommended extensions](.vscode/extensions.json)
 
 ## Getting Started
 
