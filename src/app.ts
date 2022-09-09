@@ -2,14 +2,24 @@ import "module-alias/register";
 
 import express, { NextFunction, Request, Response } from "express";
 import { NotFound, HttpError } from "http-errors";
+import http from "http";
+import { Server } from "socket.io";
 import morgan from "morgan";
 import dotenv from "dotenv";
 import rootRouter from "@routes";
-
+import registerSocketEvents from "@socks";
 // Load .env file
 dotenv.config();
 
 const app = express();
+const httpServer = http.createServer(app);
+const io = new Server(httpServer, {
+  cors: {
+    origin: "*",
+    methods: ["GET", "POST"],
+  },
+});
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -33,6 +43,12 @@ app.use((err: HttpError, req: Request, res: Response, next: NextFunction) => {
   });
 });
 
+//Load Socket Events
+registerSocketEvents(io);
+
+
+
+
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => console.log(`🚀 @ http://localhost:${PORT}`));
+httpServer.listen(PORT, () => console.log(`🚀 @ http://localhost:${PORT}`));
